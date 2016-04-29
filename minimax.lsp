@@ -138,6 +138,10 @@
                         ( setf b ( min b best-score ) )
                     )
                 )
+
+                (when (<= b a)
+                    (return)
+                )     
             )
 
             ; return (value path) list when done
